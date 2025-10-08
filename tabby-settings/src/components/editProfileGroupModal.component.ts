@@ -67,7 +67,7 @@ export class EditProfileGroupModalComponent<G extends ProfileGroup> {
         private translate: TranslateService,
     ) {
         this.profilesService.getProfileGroups().then(groups => {
-            this.groups = this.getValidParents(groups, this.group?.id)
+            this.groups = this.getValidParents(groups, this.group.id)
             this.selectedParentGroup = groups.find(g => g.id === this.group.parentGroupId) ?? undefined
         })
     }
