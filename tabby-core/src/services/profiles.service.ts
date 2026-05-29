@@ -213,7 +213,7 @@ export class ProfilesService {
         const provider = this.providerForProfile(fullProfile)
         const freeInputEquivalent = provider instanceof QuickConnectProfileProvider ? provider.intoQuickConnectString(fullProfile) ?? undefined : undefined
         return {
-            ...profile,
+            ...profile as any,
             group: this.resolveProfileGroupPath(profile.group ?? '').join(' 🡒 '),
             freeInputEquivalent,
             description: provider?.getDescription(fullProfile),

@@ -19,13 +19,11 @@
   "license": "MIT",
   "devDependencies": {
     "bootstrap": "^5.3.0-alpha.1",
-    "color": "^4.2.3",
     "deepmerge": "^4.1.1",
     "fuzzy-search": "^3.2.1",
     "js-yaml": "^4.0.0",
     "messageformat": "^2.3.0",
-    "mixpanel": "^0.17.0",
-    "ngx-translate-messageformat-compiler": "^4.11.0",
+    "mixpanel": "^0.22.0",
     "readable-stream": "4.4.0",
     "uuid": "^9.0.0"
   },
@@ -37,5 +35,9 @@
     "@angular/platform-browser": "^15",
     "@angular/platform-browser-dynamic": "^15",
     "rxjs": "^7"
+  },
+  "dependencies": {
+    "color": "4.2.3",
+    "ngx-translate-messageformat-compiler": "4.11.0"
   }
 }
